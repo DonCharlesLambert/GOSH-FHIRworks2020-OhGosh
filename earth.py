@@ -3,7 +3,7 @@ EARTH🌱
 This file contains constants which represent different data fields, it is simultaneously pivotal and
 useless
 
-The file is titled Earth as it utilises constants -- which never change
+The file is titled Earth as all the other files dependent on it -- just as we depend on the earth
 """
 
 # WINDOW

@@ -13,6 +13,16 @@ from fire import *
 from earth import GRAPH_FOLDER
 
 
+def bar_chart_for_field(field):
+    x, y = get_xy_data(field)
+    return create_bar_chart(x, y, "bar" + str(field))
+
+
+def pie_chart_for_field(field):
+    x, y = get_xy_data(field)
+    return create_pie_chart(x, y, "pie" + str(field))
+
+
 def get_xy_data(field):
     fire_style_fire_ball_jutsu = FireData()
     data = fire_style_fire_ball_jutsu.get_data_totals(field)
@@ -22,16 +32,6 @@ def get_xy_data(field):
         x.append(key)
         y.append(data[key])
     return x, y
-
-
-def bar_chart_for_field(field):
-    x, y = get_xy_data(field)
-    return create_bar_chart(x, y, "bar" + str(field))
-
-
-def pie_chart_for_field(field):
-    x, y = get_xy_data(field)
-    return create_pie_chart(x, y, "pie" + str(field))
 
 
 # Creates a bar chart given x and y values
@@ -62,10 +62,8 @@ def create_pie_chart(x, y, name):
     ax.patch.set_alpha(0.5)
 
     fig1, ax1 = plot.subplots()
-    ax1.pie(y, labels=x, autopct='%1.1f%%',
-            shadow=True, startangle=90)
+    ax1.pie(y, labels=x, autopct='%1.1f%%', shadow=True, startangle=90)
     ax1.axis('equal')
 
     plot.savefig(save_name, facecolor=fig.get_facecolor(), edgecolor='none')
     return save_name
-

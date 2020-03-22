@@ -1,6 +1,7 @@
 """
 FIRE🔥
-Model - This file contains classes that interact with the GOSH FHIR backend in order to retrieve
+1) An effective use of an international standard, FHIR
+Model - This file contains a class that interacts with the GOSH FHIR backend in order to retrieve
 and analyse anonymous patient data
 
 The file is titled fire as it uses the FHIR standard, albeit, through an API
@@ -15,15 +16,6 @@ class FireData:
     def __init__(self):
         fhir = FHIR(endpoint='https://fhir.compositegrid.com:5001/api/')
         self.patients = fhir.get_all_patients()
-
-    def get_marital_data(self):
-        marital_status = {}
-        for patient in self.patients:
-            if str(patient.marital_status) in marital_status:
-                marital_status[str(patient.marital_status)] += 1
-            else:
-                marital_status[str(patient.marital_status)] = 1
-        return marital_status
 
     def get_data_totals(self, field):
         data = {}

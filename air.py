@@ -1,6 +1,6 @@
 """
 AIR💨
-1) A suitable package that is made available and deployable as a demonstrator
+3) A suitable package that is made available and deployable as a demonstrator
 This file contains file produces the deployable application, showing patient data through
 graphs and charts
 
@@ -35,8 +35,6 @@ class Aang:
         self.add_graph()
         self.add_menu()
         self.add_loading()
-
-        # root.after(0, application, canvas)
         root.mainloop()
 
     def add_logo(self):
