@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd81dec-b023-4569-b651-0bf3d4082c11" name="Default Changelist" comment="" />
+    <list default="true" id="1bd81dec-b023-4569-b651-0bf3d4082c11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/air.py" beforeDir="false" afterPath="$PROJECT_DIR$/air.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/StatButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/VisButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/aang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/zuko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/water.py" beforeDir="false" afterPath="$PROJECT_DIR$/water.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +24,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/air.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            <state relative-caret-position="187">
+              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
               <folding>
-                <element signature="e#253#274#0" expanded="true" />
+                <element signature="e#247#268#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -25,38 +36,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/water.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-              <folding>
-                <element signature="e#216#248#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wing.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/6.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/3.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/earth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-131">
               <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
@@ -67,9 +56,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding>
-                <element signature="e#227#255#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,6 +68,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,31 +94,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="fihr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fihr" type="462c0819:PsiDirectoryNode" />
+              <item name="GOSH-FHIRworks2020-OhGosh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GOSH-FHIRworks2020-OhGosh" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="fihr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fihr" type="462c0819:PsiDirectoryNode" />
+              <item name="GOSH-FHIRworks2020-OhGosh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GOSH-FHIRworks2020-OhGosh" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fihr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fihr" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -264,31 +249,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/adapters.py" />
     <entry file="file://$PROJECT_DIR$/fihrting.py" />
-    <entry file="file://$PROJECT_DIR$/marital data.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/marital data.png" />
     <entry file="file://$PROJECT_DIR$/img/fire ring.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ChasinCheese/ChasinCheese.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="80" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../ChasinCheese/ChasinCheese.py" />
     <entry file="file://$PROJECT_DIR$/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img1.png" />
     <entry file="file://$PROJECT_DIR$/data/11.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -296,6 +265,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wing.txt">
@@ -309,35 +281,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#227#255#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/earth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-131">
           <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/water.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding>
-            <element signature="e#216#248#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/air.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        <state relative-caret-position="187">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
           <folding>
-            <element signature="e#253#274#0" expanded="true" />
+            <element signature="e#247#268#0" expanded="true" />
           </folding>
         </state>
       </provider>

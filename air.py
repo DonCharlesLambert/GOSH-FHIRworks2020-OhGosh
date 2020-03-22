@@ -6,11 +6,14 @@ graphs and charts
 
 The file is titled air as it creates a window
 """
+
 from tkinter import *
 from tkinter.ttk import Progressbar
 from functools import partial
 from threading import Thread
 from time import sleep
+from os import path, remove
+from glob import glob
 from PIL import Image, ImageTk
 from water import *
 from earth import *
@@ -29,8 +32,8 @@ class Aang:
         root.config(bg=BACKGROUND_COLOR)
         root.resizable(False, False)
         self.add_logo()
-        self.add_menu()
         self.add_graph()
+        self.add_menu()
         self.add_loading()
 
         # root.after(0, application, canvas)
@@ -47,21 +50,22 @@ class Aang:
         self.chart_type.set('Pie Chart')
 
         chart_selector = OptionMenu(self.root, self.chart_type, *choices)
-        chart_selector.config(bg=BACKGROUND_COLOR, width=15)
+        chart_selector.config(bg=BACKGROUND_COLOR, width=12)
         chart_selector.grid(row=2)
-        Button(self.root, text="Marital Status", command=partial(self.get_diagram, MARITAL), bg=BACKGROUND_COLOR, width=15).grid(row=2, column=2)
-        Button(self.root, text="Gender", command=partial(self.get_diagram, GENDER), bg=BACKGROUND_COLOR, width=15).grid(row=2, column=3)
-        Button(self.root, text="Age", command=partial(self.get_diagram, AGE), bg=BACKGROUND_COLOR, width=15).grid(row=2, column=4)
-        Button(self.root, text="Multiple Birthdays", command=partial(self.get_diagram, MULTIPLE_BIRTH), bg=BACKGROUND_COLOR, width=15).grid(row=2, column=5)
+        Button(self.root, text="Marital Status", command=partial(self.get_diagram, MARITAL), bg=BACKGROUND_COLOR, width=15).grid(row=3)
+        Button(self.root, text="Gender", command=partial(self.get_diagram, GENDER), bg=BACKGROUND_COLOR, width=15).grid(row=4)
+        Button(self.root, text="Age", command=partial(self.get_diagram, AGE), bg=BACKGROUND_COLOR, width=15).grid(row=5)
+        Button(self.root, text="Multiple Birthdays", command=partial(self.get_diagram, MULTIPLE_BIRTH), bg=BACKGROUND_COLOR, width=15).grid(row=6)
+        Button(self.root, text="Refresh", command=self.refresh, bg=BACKGROUND_COLOR, width=15).grid(row=7)
 
     def add_graph(self):
-        self.graph_image = self.get_image(480, 360, r"data\bg.png")
+        self.graph_image = self.get_image(480, 360, r"img\bg.png")
         self.graph = Label(self.root, image=self.graph_image, bg=BACKGROUND_COLOR)
-        self.graph.grid(row=3, columnspan=6)
+        self.graph.grid(column=2, rowspan=6)
 
     def add_loading(self):
-        self.progress = Progressbar(self.root, length=250)
-        self.progress.grid(row=4, columnspan=5)
+        self.progress = Progressbar(self.root)
+        self.progress.grid(row=8)
 
     def get_diagram(self, field):
         Thread(target=partial(self.show_diagram, field)).start()
@@ -69,9 +73,14 @@ class Aang:
 
     def show_diagram(self, field):
         if self.chart_type.get() == "Bar Chart":
-            self.graph_image = self.get_image(480, 360, bar_chart_for_field(field))
+            location = r"data\bar" + str(field) + ".png"
+            if not path.exists(location):
+                location = bar_chart_for_field(field)
         else:
-            self.graph_image = self.get_image(480, 360, pie_chart_for_field(field))
+            location = r"data\pie" + str(field) + ".png"
+            if not path.exists(location):
+                location = pie_chart_for_field(field)
+        self.graph_image = self.get_image(480, 360, location)
         self.graph.configure(image=self.graph_image)
 
     def simulate_loading(self):
@@ -80,6 +89,12 @@ class Aang:
             self.progress['value'] = (self.progress['value'] + 10) % 100
             sleep(0.3)
         self.progress['value'] = 0
+
+    def refresh(self):
+        #delete all images
+        files = glob('data/*')
+        for f in files:
+            remove(f)
 
     @staticmethod
     def get_image(width, height, img):

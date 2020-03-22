@@ -26,12 +26,12 @@ def get_xy_data(field):
 
 def bar_chart_for_field(field):
     x, y = get_xy_data(field)
-    return create_bar_chart(x, y, str(field))
+    return create_bar_chart(x, y, "bar" + str(field))
 
 
 def pie_chart_for_field(field):
     x, y = get_xy_data(field)
-    return create_pie_chart(x, y, str(field))
+    return create_pie_chart(x, y, "pie" + str(field))
 
 
 # Creates a bar chart given x and y values
