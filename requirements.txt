@@ -1,0 +1,4 @@
+FHIR-Parser
+matplotlib
+numpy
+Pillow==7.1.2
