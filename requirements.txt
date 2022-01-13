@@ -1,4 +1,4 @@
 FHIR-Parser
 matplotlib
 numpy
-Pillow==7.1.2
+Pillow==9.0.0
